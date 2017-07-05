@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        tools:context=".MyMainActivity">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/main_fromLanguage"
+                    android:id="@+id/main_fromLanguage"
+                    android:textSize="25sp"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/main_fromLanguage"
+                    android:layout_toRightOf="@+id/main_fromLanguage"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/audio_icon"
+                    android:contentDescription="@string/main_fromLanguageDescription"
+                    android:id="@+id/from_audio"/>
+
+        </RelativeLayout>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/main_fromText"
+                android:inputType="text"
+                android:id="@+id/main_editText"
+                android:textSize="25sp"/>
+    </LinearLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/main_translateButton"
+            android:textSize="20sp"
+            android:id="@+id/button_translate"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/main_toLanguage"
+                        android:id="@+id/main_toLanguage"
+                        android:textSize="25sp"/>
+
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toRightOf="@+id/main_toLanguage"
+                        android:layout_toEndOf="@+id/main_toLanguage"
+                        android:src="@drawable/audio_icon"
+                        android:contentDescription="@string/main_toLanguageDescription"
+                        android:id="@+id/to_audio"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:text="@string/main_toText"
+                    android:id="@+id/main_result"
+                    android:textSize="35sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="center">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/bottom_01"
+                android:gravity="center" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_switchText"
+                    android:id="@+id/main_switchText"
+                    android:textSize="20sp"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/swap"
+                    android:contentDescription="@string/main_switchDescription"
+                    android:id="@+id/swap_img"
+                    android:layout_below="@+id/main_switchText"
+                    android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/bottom_01"
+                android:gravity="center">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/main_returnText"
+                    android:id="@+id/main_returnText"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/return_arrow"
+                    android:contentDescription="@string/main_returnText"
+                    android:id="@+id/return_img" android:layout_below="@+id/main_returnText"
+                    android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

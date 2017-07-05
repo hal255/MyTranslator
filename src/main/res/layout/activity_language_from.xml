@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@color/colorWhite"
+        tools:context=".MyMainActivity">
+    <ViewFlipper
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewflipper_language_from"
+            android:layout_margin="6dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/source_language"
+                    android:textSize="30sp"
+                    android:id="@+id/from_textview01">
+            </TextView>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cht"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_cht"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chs"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_chs"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yue"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_yue"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ja"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_ja"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ko"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_ko"
+            />
+
+            <!--
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ms"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_ms"
+            />
+            -->
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/en"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_en"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/source_language"
+                    android:textSize="30sp"
+                    android:id="@+id/from_textview02">
+            </TextView>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fr"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_fr"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/es"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_es"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nl"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/button_from_nl"
+            />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+</RelativeLayout>

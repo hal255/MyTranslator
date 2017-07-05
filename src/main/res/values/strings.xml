@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MyTranslator</string>
+    <string name="app_name2">Translator</string>
+
+    <!-- Layouts: language to and from-->
+    <string name="source_language">Select Source Language</string>
+    <string name="translated_language">Select Translated Language</string>
+    <string name="me">Taz</string>
+    <string name="cht">Chinese Traditional</string>
+    <string name="chs">Chinese Simplified</string>
+    <string name="yue">Cantonese</string>
+    <string name="en">English</string>
+    <string name="ja">Japanese</string>
+    <string name="ko">Korean</string>
+    <string name="ms">Malaysian</string>
+    <string name="fr">French</string>
+    <string name="es">Spanish</string>
+    <string name="nl">Dutch</string>
+    <string name="button_font_size">25sp</string>
+    <string name="textview_font_size">30sp</string>
+
+    <!-- Layout: Main -->
+    <string name="main_fromLanguage">From Language</string>
+    <string name="main_fromText">Enter text or Click Speech</string>
+    <string name="main_fromLanguageDescription">From Language</string>
+    <string name="main_toLanguage">To Language</string>
+    <string name="main_toText">Result</string>
+    <string name="main_toLanguageDescription">To Language</string>
+    <string name="main_switchText">Switch Languages</string>
+    <string name="main_returnText">Restart</string>
+    <string name="main_switchDescription">Switches To and From Languages</string>
+    <string name="main_translateButton">Translate</string>
+
+</resources>
